@@ -73,3 +73,9 @@
 #resultScreen .result-role{
   align-self:end;
 }
+
+
+/* Hide the home-only player selector on every in-game screen (including iOS Safari). */
+#app.game-active .players,
+#app:not(:has(#homeScreen.active)) .players{display:none!important;}
+#homeScreen.active .players{display:flex;}
