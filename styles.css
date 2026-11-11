@@ -10,3 +10,22 @@
 /* Explicit result-state styling: keep Continue visibly primary on mobile Safari. */
 #continueBtn:not(.hidden){display:flex!important;width:100%;max-width:360px;min-height:54px;border-radius:15px;background:linear-gradient(110deg,#d94389,#f27eaf)!important;box-shadow:0 10px 30px #e84f9440,inset 0 1px #ffffff40!important;color:#fff!important;font-size:11px;letter-spacing:2px;font-weight:900;align-items:center;justify-content:center;gap:18px;}
 #continueBtn:not(.hidden) span{color:#fff!important;font-size:18px;}
+
+/* iOS: constrain the card body and make only its text area scroll. */
+#resultScreen{overflow:hidden;min-height:0;}
+#resultScreen .result-card{flex:1 1 0%;height:0;min-height:0;overflow:hidden;}
+#resultScreen .result-copy{
+  display:block;
+  flex:1 1 0%;
+  height:0;
+  min-height:0;
+  max-height:none;
+  overflow-x:hidden;
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+  overscroll-behavior-y:contain;
+  touch-action:pan-y;
+  scrollbar-width:thin;
+}
+#resultScreen .result-role{flex:none;}
+#resultScreen .result-actions{flex:none;}
