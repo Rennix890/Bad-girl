@@ -1,0 +1,1 @@
+Place custom spin.mp3 and win.mp3 files in this folder. Update their paths and volume in ../config.json.
