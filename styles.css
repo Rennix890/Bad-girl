@@ -29,3 +29,6 @@
 }
 #resultScreen .result-role{flex:none;}
 #resultScreen .result-actions{flex:none;}
+
+/* Player selector is only needed on the home screen; in-game turn headings replace it. */
+#app.game-active>.players{display:none!important;}
