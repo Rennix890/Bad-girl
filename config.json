@@ -1,0 +1,15 @@
+{
+  "appName": "VELVET",
+  "version": "1.0.0",
+  "sound": {
+    "enabled": true,
+    "spinFile": "sounds/spin.mp3",
+    "winFile": "sounds/win.mp3",
+    "useSynthFallback": true,
+    "volume": 0.28
+  },
+  "game": {
+    "noRepeatsPerSession": true,
+    "difficultyGroups": ["Лёгкие", "Средние", "Сложные", "Дополнения"]
+  }
+}
