@@ -75,16 +75,10 @@
 }
 
 
-/* Hide the home-only player selector on every in-game screen (including iOS Safari). */
-#app.game-active .players,
-#app:not(:has(#homeScreen.active)) .players{display:none!important;}
-#homeScreen.active .players{display:flex;}
 
-
-/* Shared player switcher: visible in the top-left corner on every screen. */
+/* Final layout: player switcher remains visible on every game screen. */
 #app>.players{display:flex!important;position:absolute;z-index:20;top:calc(12px + var(--safe-top));left:22px;}
-#app.game-active>.players{display:flex!important;}
 #app>.screen:not(#homeScreen){padding-top:58px;}
-#app>.screen#homeScreen .home-brand{padding-top:48px;}
-#app>.screen#homeScreen .home-logo{width:245px;max-width:78%;}
-@media(max-height:680px){#app>.screen#homeScreen .home-brand{padding-top:34px;}#app>.screen#homeScreen .home-logo{width:225px;}#app>.screen:not(#homeScreen){padding-top:50px;}}
+#app>.screen#homeScreen .home-brand{padding-top:60px;}
+#app>.screen#homeScreen .home-logo{width:270px;max-width:82%;}
+@media(max-height:680px){#app>.screen#homeScreen .home-brand{padding-top:42px;}#app>.screen#homeScreen .home-logo{width:245px;}#app>.screen:not(#homeScreen){padding-top:50px;}}
